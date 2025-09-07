@@ -455,7 +455,7 @@ const defaultTextureUrl = 'IMG-20250901-WA0083.jpg';
         const imageShaderMaterial = new THREE.ShaderMaterial({
             uniforms: {
                 map: { value: null },
-                glowColor: { value: new THREE.Color(#FFB6C1) },
+                glowColor: { value: new THREE.Color(0xFFFFFF) },
                 accentColor: { value: new THREE.Color(0xFFFF99) },
                 glowIntensity: { value: isMobile ? 1.0 : 1.5 },
                 time: { value: 0.0 }
@@ -487,7 +487,7 @@ const defaultTextureUrl = 'IMG-20250901-WA0083.jpg';
         });
         const shootingStarMaterial = new THREE.ShaderMaterial({
             uniforms: {
-                glowColor: { value: new THREE.Color(#FFB6C1) },
+                glowColor: { value: new THREE.Color(0xFFFFFF)) },
                 accentColor: { value: new THREE.Color(0xFFFF99) },
                 glowIntensity: { value: isMobile ? 1.5 : 2.0 },
                 time: { value: 0.0 }
