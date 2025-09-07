@@ -293,9 +293,10 @@
     'IMG-20250901-WA0083.jpg',
     'Medallón_1756688570436_76.jpg',
     'Captura de pantalla_20250817-215411.png'
-].slice(0, isMobile ? 3 : 5);
-        const estrellaFugaz = 'IMG-20250901-WA0083.jpg';
-        const defaultTextureUrl = 'IMG-20250901-WA0083.jpg';
+];
+
+const estrellaFugaz = 'IMG-20250901-WA0083.jpg';
+const defaultTextureUrl = 'IMG-20250901-WA0083.jpg';
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.z = 5;
@@ -454,7 +455,7 @@
         const imageShaderMaterial = new THREE.ShaderMaterial({
             uniforms: {
                 map: { value: null },
-                glowColor: { value: new THREE.Color(0xFFFFFF) },
+                glowColor: { value: new THREE.Color(#FFB6C1) },
                 accentColor: { value: new THREE.Color(0xFFFF99) },
                 glowIntensity: { value: isMobile ? 1.0 : 1.5 },
                 time: { value: 0.0 }
@@ -486,7 +487,7 @@
         });
         const shootingStarMaterial = new THREE.ShaderMaterial({
             uniforms: {
-                glowColor: { value: new THREE.Color(0xFFFFFF) },
+                glowColor: { value: new THREE.Color(#FFB6C1) },
                 accentColor: { value: new THREE.Color(0xFFFF99) },
                 glowIntensity: { value: isMobile ? 1.5 : 2.0 },
                 time: { value: 0.0 }
